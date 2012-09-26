@@ -6,7 +6,7 @@ require 'logger'
 load 'models/category.rb'
 load 'models/customer.rb'
 load 'models/product.rb'
-load 'models/product.rb'
+load 'models/province.rb'
 load 'models/ghost.rb'
 
 # Establish our connection to our serverless sqlite3 database.
