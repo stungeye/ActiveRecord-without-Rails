@@ -1,6 +1,4 @@
 load 'ar.rb'
-load 'models\customer.rb'
-load 'models\province.rb'
 
 iris = Customer.find(9000)
 
