@@ -1,3 +1,3 @@
 class Ghost < ActiveRecord::Base
- # This Ghost class is tied to a ghosts table in the db.
+ # This Ghost class is linked to a ghosts table in the db.
 end

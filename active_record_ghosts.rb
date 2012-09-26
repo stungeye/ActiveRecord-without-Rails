@@ -1,5 +1,9 @@
 load 'ar.rb'
 
+# The following code will not run until we run 'rake db:migrate'
+# from the command line. This will run our two migration files
+# in the db/migrate folder.
+
 puts "There at #{Ghost.count} ghosts in the db."
 
 casper_the_friendly_ghost = Ghost.new
