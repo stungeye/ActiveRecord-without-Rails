@@ -2,6 +2,8 @@
 
 Some simple ruby script that make use of ActiveRecord CRUD tasks outside of Rails.
 
+Hello. This is my repo now. This repo belongs to Kyle Geske.
+
 ## Files and Folders
 
 Explanation of the file/folder structure to come.
