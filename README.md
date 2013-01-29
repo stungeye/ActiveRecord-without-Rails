@@ -2,16 +2,6 @@
 
 Some simple ruby script that make use of ActiveRecord CRUD tasks outside of Rails.
 
-Hello. This is my repo now. This repo belongs to Kyle Geske.
-
-## Files and Folders
-
-Explanation of the file/folder structure to come.
-
-## Migrations
-
-Explanation of how to use the provided migrations to come.
-
 ## Active Record Resources
 
 * [Active Record Query Interface](http://guides.rubyonrails.org/active_record_querying.html)
