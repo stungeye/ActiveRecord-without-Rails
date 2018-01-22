@@ -1,13 +1,16 @@
 # Load the required gems/libraries.
+require 'rubygems'
+require 'bundler/setup'
 require 'active_record'
+require 'sqlite3'
 require 'logger'
 
 # Load all of our ActiveRecord::Base objects.
-load 'models/category.rb'
-load 'models/customer.rb'
-load 'models/product.rb'
-load 'models/province.rb'
-load 'models/ghost.rb'
+load 'models/category.rb' # categories table
+load 'models/customer.rb' # customers table
+load 'models/product.rb'  # products table
+load 'models/province.rb' # provinces table
+load 'models/ghost.rb'    # ghosts table
 
 # Establish our connection to our serverless sqlite3 database.
 ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => 'db/development.sqlite3'
