@@ -6,11 +6,11 @@ require 'sqlite3'
 require 'logger'
 
 # Load all of our ActiveRecord::Base objects.
-load 'models/category.rb' # categories table
-load 'models/customer.rb' # customers table
-load 'models/product.rb'  # products table
-load 'models/province.rb' # provinces table
-load 'models/ghost.rb'    # ghosts table
+require_relative 'models/category.rb' # categories table
+require_relative 'models/customer.rb' # customers table
+require_relative 'models/product.rb'  # products table
+require_relative 'models/province.rb' # provinces table
+require_relative 'models/ghost.rb'    # ghosts table
 
 # Establish our connection to our serverless sqlite3 database.
 ActiveRecord::Base.establish_connection :adapter => 'sqlite3', :database => 'db/development.sqlite3'
