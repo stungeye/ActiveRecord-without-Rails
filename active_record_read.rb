@@ -40,7 +40,7 @@ puts last_customer.name
 winnipeg_customers = Customer.where(:city => 'Winnipeg')
 
 # The where method can also take a string argument.
- 
+
 customers_with_a_names = Customer.where('name LIKE "a%"')
 
 # We can also chain other SQL clauses onto our searches.
@@ -56,3 +56,12 @@ puts "Number of Winnipeg customers is #{winnipeg_customers.size}"
 customer_by_id = Customer.find(9000)
 
 puts customer_by_id.inspect
+
+# If you want to find the first instance of a record that matches a where clause,
+# use find_by. Similar to where, but returns a single object instead of a collection.
+
+customer = Customer.find_by('name LIKE "a%"')
+puts customer.name
+
+customer = Customer.find_by(city: 'Winnipeg')
+puts customer.inspect

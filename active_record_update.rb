@@ -33,3 +33,12 @@ five_customers_with_a_names.each do |c|
   c.city = "Winnipeg"
   c.save
 end
+
+# The above will fire off one SQL UPDATE for each record. You can update all in
+# one SQL statement using the more efficient update_all:
+
+winnipeggers = Customer.where(city: 'Winnipeg')
+
+# Moving all customers to Winterpeg:
+
+winnipeggers.update_all(city: 'Winterpeg')
