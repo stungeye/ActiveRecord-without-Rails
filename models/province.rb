@@ -1,5 +1,5 @@
 class Province < ActiveRecord::Base
-  # This AR object is linked with the provinces table.
+  # This AR class is linked with the provinces table.
   
   # A province has a one to many relationship with customers.
   # The customers table has a province_id foreign key.
