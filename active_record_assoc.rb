@@ -29,9 +29,9 @@ quebec.customers.each { |c| puts c.name }
 
 # Method One. Create the customer without a province.
 
-new_customer = Customer.new( :name => 'New Customer',
-                             :city => 'Quebec',
-                             :email => 'customer@email.com')
+new_customer = Customer.new( name:  'New Customer',
+                             city:  'Quebec',
+                             email: 'customer@email.com')
 
 # Assign an existing Province object to the customer.
 # This will automatically set the customer's province_id
@@ -45,9 +45,9 @@ puts new_customer.inspect
 
 # We can also use an existing Province object to build a new customer:
 
-new_one = quebec.customers.build( :name => 'My New Customer',
-                                  :email => 'me@here.com',
-                                  :city => 'Quebec')
+new_one = quebec.customers.build( name:  'My New Customer',
+                                  email: 'me@here.com',
+                                  city:  'Quebec')
 
 new_one.save
 
