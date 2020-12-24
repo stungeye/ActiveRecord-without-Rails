@@ -37,7 +37,7 @@ puts last_customer.name
 # We can simulate SQL WHERE clauses with the .where method.
 # Exact matches can be found as follows:
 
-winnipeg_customers = Customer.where(:city => 'Winnipeg')
+winnipeg_customers = Customer.where(city: 'Winnipeg')
 
 # The where method can also take a string argument.
 
